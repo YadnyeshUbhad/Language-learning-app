@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('quiz.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f4f4f9;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(35,35,35,0.8));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+nav a {
+    color: #f4f4f9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main Section */
+.main {
+    text-align: center;
+    padding: 70px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #ffcc00;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    font-weight: 700;
+    animation: fade-in 2s;
+    color: #ffcc00;
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: slide-in 2s;
+    color: #ddd;
+}
+
+.language-selector {
+    margin: 30px 0;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 8px;
+    font-size: 1.2em;
+    animation: bounce 2s infinite;
+    transition: background 0.3s;
+}
+
+.buttons a:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+}
+
+/* Feature Section */
+.feature {
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    border: 3px solid #ffcc00;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    animation: zoom-in 1s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.feature h2 {
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.feature p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.feature button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.feature button:hover {
+    background: #e6b800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(35,35,35,0.8));
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.back-to-top {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-in {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes zoom-in {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+.daily-challenge {
+    background: url('path-to-background-image.jpg') center/cover no-repeat;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .daily-challenge h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-description {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .challenge-timer {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .complete-challenge-btn {
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .complete-challenge-btn:hover {
+    background: #ffaa00;
+  }
+  

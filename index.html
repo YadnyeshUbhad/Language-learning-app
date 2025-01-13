@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Languages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌍 Learn Languages</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#quizzes">Quizzes</a>
+            <a href="#flashcards">Flashcards</a>
+            <a href="#pronunciation">Pronunciation</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="overlay">
+            <h1 class="animate-fade">Welcome to Learn Languages</h1>
+            <p class="animate-slide">Unlock your potential with interactive tools and personalized learning experiences.</p>
+            <div class="language-selector">
+                <label for="language">Choose a language:</label>
+                <select id="language">
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <a href="#quizzes" class="animate-bounce">Take a Quiz</a>
+                <a href="#flashcards" class="animate-bounce">Learn with Flashcards</a>
+                <a href="#pronunciation" class="animate-bounce">Improve Pronunciation</a>
+            </div>
+        </div>
+    </main>
+    <section id="features">
+        <div class="feature animate-zoom">
+            <h2>Interactive Quizzes</h2>
+            <p>Test your knowledge with fun and challenging quizzes.</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+        <div class="feature animate-zoom">
+            <h2>Engaging Flashcards</h2>
+            <p>Flip through flashcards to memorize words and phrases easily.</p>
+            <button onclick="showFlashcards()">View Flashcards</button>
+        </div>
+        <div class="feature animate-zoom">
+            <h2>Real-time Pronunciation</h2>
+            <p>Learn how to pronounce words correctly with audio guides.</p>
+            <button onclick="startPronunciationGuide()">Start Guide</button>
+        </div>
+        <div class="feature animate-zoom">
+            <h2>Daily Vocabulary</h2>
+            <p>Learn a new word every day to expand your vocabulary.</p>
+            <button onclick="showDailyWord()">Today's Word</button>
+        </div>
+    </section>
+    <section class="daily-challenge">
+        <h2>Today's Challenge</h2>
+        <p class="challenge-description">Complete 5 flashcards</p>
+        <div class="challenge-timer">Resets in: <span id="timer">24:00:00</span></div>
+        <button class="complete-challenge-btn">Mark as Complete</button>
+      </section>
+      
+    <section id="quiz" class="hidden">
+        <h2>Quiz Time!</h2>
+        <div class="progress-bar">
+            <div class="progress" style="width: 25%;"></div>
+        </div>
+        <ul>
+            <li><button onclick="checkAnswer(this, true)">Hola</button></li>
+            <li><button onclick="checkAnswer(this, false)">Bonjour</button></li>
+            <li><button onclick="checkAnswer(this, false)">Hallo</button></li>
+            <li><button onclick="checkAnswer(this, false)">Konnichiwa</button></li>
+        </ul>
+        <p id="quiz-feedback"></p>
+    </section>
+    <section id="flashcards" class="hidden">
+        <h2>Flashcards</h2>
+        <div class="flashcard">
+            <p id="flashcard-word">Word: Apple</p>
+            <p id="flashcard-translation">Translation: Manzana</p>
+        </div>
+        <button onclick="nextFlashcard()">Next</button>
+    </section>
+    <section id="daily-word" class="hidden">
+        <h2>Daily Word</h2>
+        <p>Word: Serendipity</p>
+        <p>Meaning: The occurrence of events by chance in a happy or beneficial way.</p>
+        <button onclick="hideDailyWord()">Close</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Learn Languages. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
