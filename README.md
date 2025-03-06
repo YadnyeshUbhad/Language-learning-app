@@ -25,7 +25,7 @@ The **Language Learning Web Application** is an interactive platform designed to
 ### 📥 **Installation & Setup**
 #### **1. Clone the Repository**
 ```sh
-git clone https://github.com/your-username/language-learning-app.git
+git clone https://github.com/YadnyeshUbhad/language-learning-app.git
 cd language-learning-app
 ```
 
